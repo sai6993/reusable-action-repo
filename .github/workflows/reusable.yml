@@ -1,0 +1,17 @@
+# .github/workflows/reusable.yml
+name: Reusable Workflow
+
+on:
+  workflow_call:  # 👈 required for reuse
+
+    inputs:
+      username:
+        required: true
+        type: string
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Message
+        run: echo "Hello, ${{ inputs.username }} from reusable workflow!"
