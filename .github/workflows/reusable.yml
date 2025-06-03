@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Message
-        run: echo "Hello123, ${{ inputs.username }} from reusable workflow123!"
+        run: echo "Hello123456, ${{ inputs.username }} from reusable workflow123456!"
